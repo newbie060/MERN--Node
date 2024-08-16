@@ -1,9 +1,10 @@
-const mongoose = require('mongose')
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const blogSchema = new Schema({
     title : {
-        type : String
+        type : String,
+        unique: true
     },
     subtitle : {
         type : String
